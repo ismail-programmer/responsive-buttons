@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Buttons</title>
+</head>
+<body>
+    
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Flat UI Buttons</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
+  <style>/*CSS for a really simple responsive grid*/
+    body{font-family:Open Sans; color:#555555;}
+    h1{font-size:24px; font-weight:normal; margin:0.4em 0;}
+    
+    .container { width: 100%; margin: 0 auto; }
+    .container .row { float: left; clear: both; width: 100%; }
+    .container .col { float: left; margin: 0 0 1.2em; padding-right: 1.2em; padding-left: 1.2em; }
+    .container .col.one, .container .col.two, .container .col.three, .container .col.four, .container .col.five, .container .col.six, .container .col.seven, .container .col.eight, .container .col.nine, .container .col.ten, .container .col.eleven, .container .col.twelve { width: 100%; }
+    
+    
+    @media screen and (min-width: 767px) {
+      .container{width: 100%; max-width: 1080px; margin: 0 auto;}
+      .container .row{width:100%; float:left; clear:both;}
+      .container .col{float: left; margin: 0 0 1em; padding-right: .5em; padding-left: .5em;}
+      .container .col.one { width: 8.33%; }
+      .container .col.two { width: 16.66%; }
+      .container .col.three { width: 24.99%; }
+      .container .col.four { width: 50%; }
+      .container .col.five { width: 41.65%; }
+      .container .col.six { width: 49.98%; }
+      .container .col.seven { width: 58.31%; }
+      .container .col.eight { width: 66.64%; }
+      .container .col.nine { width: 74.97%; }
+      .container .col.ten { width: 83.3%; }
+      .container .col.eleven { width: 91.65%; }
+      .container .col.tweleve { width: 100%; }
+    }
+    
+    /*All the button styles*/
+    
+    * {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+    a{text-decoration:none;}
+    
+    /********************
+    GENERIC BUTTON STYLES
+    ********************/
+    .btn {font-size: 18px; white-space:nowrap; width:100%; padding:.8em 1.5em; font-family: Open Sans, Helvetica,Arial,sans-serif; line-height:18px; display: inline-block;zoom: 1; color: #fff; text-align: center; position:relative; -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear; transition: border .25s linear, color .25s linear, background-color .25s linear;}
+    
+    /*SEA GREEN BUTTON STYLES*/		
+    .btn.btn-sea{background-color: #08bc9a; border-color: #08bc9a; -webkit-box-shadow: 0 3px 0 #088d74; box-shadow: 0 3px 0 #088d74;}
+    .btn.btn-sea:hover{background-color:#01a183;}
+    .btn.btn-sea:active{ top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+    
+    /*DARK BLUE BUTTON STYLES*/		
+    .btn.btn-dark-blue{background-color: #237fbc; border-color: #237fbc; -webkit-box-shadow: 0 3px 0 #1a5c87; box-shadow: 0 3px 0 #1a5c87;}
+    .btn.btn-dark-blue:hover{background-color:#166ea8;}
+    .btn.btn-dark-blue:active{ top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+    
+    /*RED/ROUGE BUTTON STYLES*/		
+    .btn.btn-rouge{background-color: #c0392b; border-color: #c0392b; -webkit-box-shadow: 0 3px 0 #8f2a1f; box-shadow: 0 3px 0 #8f2a1f;}
+    .btn.btn-rouge:hover{background-color:#ac3420;}
+    .btn.btn-rouge:active{top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+    
+    /*DARK BUTTON STYLES*/		
+    .btn.btn-dark{background-color: #2c3d51; border-color: #2c3d51; -webkit-box-shadow: 0 3px 0 #080c0f; box-shadow: 0 3px 0 #080c0f;}
+    .btn.btn-dark:hover{background-color:#202d3d;}
+    .btn.btn-dark:active{top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+    
+    /*DARK BUTTON STYLES*/		
+    .btn.btn-orange{background-color: #f59e00; border-color: #f59e00; -webkit-box-shadow: 0 3px 0 #b37401; box-shadow: 0 3px 0 #b37401;}
+    .btn.btn-orange:hover{background-color:#dd9003;}
+    .btn.btn-orange:active{top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+    
+    /*SUNFLOWER BUTTON STYLES*/		
+    .btn.btn-sunflower{background-color: #f2c500; border-color: #f2c500; -webkit-box-shadow: 0 3px 0 #b19001; box-shadow: 0 3px 0 #b19001;}
+    .btn.btn-sunflower:hover{background-color:#e3ba02;}
+    .btn.btn-sunflower:active{top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+    
+    /*RED BUTTON STYLES*/		
+    .btn.btn-red{background-color: #ea4f37; border-color: #ea4f37; -webkit-box-shadow: 0 3px 0 #b13825; box-shadow: 0 3px 0 #b13825;}
+    .btn.btn-red:hover{background-color:#a53422;}
+    .btn.btn-red:active{top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+    
+    /*CONCRETE BUTTON STYLES*/		
+    .btn.btn-concrete{background-color: #7e8c8d; border-color: #7e8c8d; -webkit-box-shadow: 0 3px 0 #4e5b5c; box-shadow: 0 3px 0 #4e5b5c;}
+    .btn.btn-concrete:hover{background-color:#6a7879;}
+    .btn.btn-concrete:active{top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+            
+    /********************
+    SOCIAL BUTTON STYLES
+    ********************/
+    
+    /*FACEBOOK*/
+    .btn.btn-facebook{background-color: #2479b6; border-color: #2479b6; -webkit-box-shadow: 0 3px 0 #1c6394; box-shadow: 0 3px 0 #1c6394;}
+    .btn.btn-facebook:active{top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+    /*TWITTER*/
+    .btn.btn-twitter{background-color: #2a91db; border-color: #2a91db; -webkit-box-shadow: 0 3px 0 #1d6ea7; box-shadow: 0 3px 0 #1d6ea7;}
+    .btn.btn-twitter:active{top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+    /*GOOGLE PLUS*/
+    .btn.btn-google-plus{background-color: #be3b26; border-color: #be3b26; -webkit-box-shadow: 0 3px 0 #842719; box-shadow: 0 3px 0 #842719;}
+    .btn.btn-google-plus:active{top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+    /*DRIBBBLE*/
+    .btn.btn-dribbble{background-color: #f62d7e; border-color: #f62d7e; -webkit-box-shadow: 0 3px 0 #d3235a; box-shadow: 0 3px 0 #d3235a;}
+    .btn.btn-dribbble:active{top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+    /*YOU TUBE*/
+    .btn.btn-you-tube{background-color: #cf3728; border-color: #cf3728; -webkit-box-shadow: 0 3px 0 #9a1e1a; box-shadow: 0 3px 0 #9a1e1a;}
+    .btn.btn-you-tube:active{top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+    /*LinkedIn*/
+    .btn.btn-linkedin{background-color: #0074ba; border-color: #0074ba; -webkit-box-shadow: 0 3px 0 #00497b; box-shadow: 0 3px 0 #00497b;}
+    .btn.btn-linkedin:active{top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+    /*Dropbox*/
+    .btn.btn-dropbox{background-color: #0083e4; border-color: #0083e4; -webkit-box-shadow: 0 3px 0 #015593; box-shadow: 0 3px 0 #015593;}
+    .btn.btn-dropbox:active{top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+    /*Wordpress*/
+    .btn.btn-wordpress{background-color: #1d7794; border-color: #1d7794; -webkit-box-shadow: 0 3px 0 #114657; box-shadow: 0 3px 0 #114657;}
+    .btn.btn-wordpress:active{top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+    /*Pinterest*/
+    .btn.btn-pinterest{background-color: #c8232a; border-color: #c8232a; -webkit-box-shadow: 0 3px 0 #89171b; box-shadow: 0 3px 0 #89171b;}
+    .btn.btn-pinterest:active{ top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+    /*Skype*/
+    .btn.btn-skype{background-color: #2eabde; border-color: #2eabde; -webkit-box-shadow: 0 3px 0 #1b6684; box-shadow: 0 3px 0 #1b6684;}
+    .btn.btn-skype:active{top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+    /*Instagram*/
+    .btn.btn-instagram{background-color: #5182aa; border-color: #5182aa; -webkit-box-shadow: 0 3px 0 #1f415d; box-shadow: 0 3px 0 #1f415d;}
+    .btn.btn-instagram:active{top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+    /*RSS*/
+    .btn.btn-rss{background-color: #f8a933; border-color: #f8a933; -webkit-box-shadow: 0 3px 0 #ab7422; box-shadow: 0 3px 0 #ab7422;}
+    .btn.btn-rss:active{top: 3px; outline: none; -webkit-box-shadow: none; box-shadow: none;}
+    
+    /**********
+    Icon styles
+    **********/
+    .btn i {padding-right:0.8em; line-height:22px;}
+    .icon-only{padding: 1em;}
+    .icon-only i{padding-right:0; font-size:22px; line-height:22px; }
+        
+    
+    
+            </style>
+    </head>
+    <body>
+    
+    <!-- ***************************
+        ****************************
+        TO GET STARTED, SIMPLY COPY THE  
+        <a href="" class="btn btn-sunflower">Click Here!</a> 
+        AND LINK THE button-styles.css TO YOUR HTML PAGE. 
+        IF YOU PLAN TO USE THE ICONS & FONT (OPEN SANS) YOU'LL
+        ALSO NEED TO LINK TO THAT AS SHOWN IN THE HEAD SECTION ABOVE
+        ****************************
+        ****************************
+    -->
+    
+    <div class="container">
+        <div class="row">
+            <div class="col twelve">			
+                <h1>Generic Flat Buttons - With hover & click effects</h1>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col three">				
+                <a href="#" class="btn btn-sunflower">Click Here!</a>			
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-dark-blue">Click Here!</a>		
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-rouge">Click Here!</a>			
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-dark">Click Here!</a>		
+            </div>
+    
+        </div>
+    
+        <div class="row">
+            <div class="col three">			
+                <a href="#" class="btn btn-orange">Click Here!</a>		
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-sea">Click Here!</a>					
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-red">Click Here!</a>		
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-concrete">Click Here!</a>			
+            </div>
+        </div>
+    
+        
+        <div class="row">
+            <div class="col twelve">			
+                <h1>Social Icon Buttons - With click effects</h1>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col four">
+                <a href="#" class="btn btn-facebook"><i class="fa fa-facebook"></i>  Sign in with Facebook</a>	
+            </div>
+    
+            <div class="col four">
+                <a href="#" class="btn btn-twitter"><i class="fa fa-twitter"></i>  Sign in with Twitter</a>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col four">
+                <a href="#" class="btn btn-google-plus"><i class="fa fa-google-plus"></i>  Sign in with Google+</a>	
+            </div>
+    
+            <div class="col four">
+                <a href="#" class="btn btn-linkedin"><i class="fa fa-linkedin"></i>  Sign in with LinkedIn</a>	
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col one">
+                <a href="#" class="btn btn-facebook icon-only"><i class="fa fa-facebook"></i></a>	
+            </div>
+    
+            <div class="col one">
+                <a href="#" class="btn btn-twitter icon-only"><i class="fa fa-twitter"></i></a>
+            </div>
+    
+            <div class="col one">
+                <a href="#" class="btn btn-google-plus icon-only"><i class="fa fa-google-plus"></i></a>	
+            </div>
+    
+            <div class="col one">
+                <a href="#" class="btn btn-dribbble icon-only"><i class="fa fa-dribbble"></i></a>	
+            </div>
+    
+            <div class="col one">
+                <a href="#" class="btn btn-you-tube icon-only"><i class="fa fa-youtube"></i></a>	
+            </div>
+    
+            <div class="col one">
+                <a href="#" class="btn btn-linkedin icon-only"><i class="fa fa-linkedin"></i></a>	
+            </div>
+    
+            <div class="col one">
+                <a href="#" class="btn btn-dropbox icon-only"><i class="fa fa-dropbox"></i></a>	
+            </div>
+    
+            <div class="col one">
+                <a href="#" class="btn btn-wordpress icon-only"><i class="fa fa-wordpress"></i></a>	
+            </div>
+    
+            <div class="col one">
+                <a href="#" class="btn btn-pinterest icon-only"><i class="fa fa-pinterest"></i></a>	
+            </div>
+    
+            <div class="col one">
+                <a href="#" class="btn btn-skype icon-only"><i class="fa fa-skype"></i></a>	
+            </div>
+    
+            <div class="col one">
+                <a href="#" class="btn btn-instagram icon-only"><i class="fa fa-instagram"></i></a>	
+            </div>
+    
+            <div class="col one">
+                <a href="#" class="btn btn-rss icon-only"><i class="fa fa-rss"></i></a>	
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col twelve">			
+                <h1>Generic Action Buttons - With hover & click effects</h1>
+            </div>
+        </div>
+            <div class="row">
+    
+            <div class="col three">			
+                <a href="#" class="btn btn-orange"><i class="fa fa-image"></i> Upload new image</a>			
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-orange"><i class="fa fa-pencil"></i> Register now</a>			
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-orange"><i class="fa fa-shopping-cart"></i> Add to cart</a>						
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-orange"><i class="fa fa-times-circle"></i> Sign out</a>			
+            </div>
+    
+        </div>
+        <div class="row">
+    
+            <div class="col three">			
+                <a href="#" class="btn btn-sea"><i class="fa fa-image"></i> Upload new image</a>			
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-sea"><i class="fa fa-pencil"></i> Register now</a>			
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-sea"><i class="fa fa-shopping-cart"></i> Add to cart</a>						
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-sea"><i class="fa fa-times-circle"></i> Sign out</a>			
+            </div>
+    
+        </div>
+    
+        <div class="row">
+            <div class="col three">			
+                <a href="#" class="btn btn-dark-blue"><i class="fa fa-image"></i> Upload new image</a>			
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-dark-blue"><i class="fa fa-pencil"></i> Register now</a>			
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-dark-blue"><i class="fa fa-shopping-cart"></i> Add to cart</a>						
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-dark-blue"><i class="fa fa-times-circle"></i> Sign out</a>			
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col three">			
+                <a href="#" class="btn btn-concrete"><i class="fa fa-image"></i> Upload new image</a>			
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-concrete"><i class="fa fa-pencil"></i> Register now</a>			
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-concrete"><i class="fa fa-shopping-cart"></i> Add to cart</a>						
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-concrete"><i class="fa fa-times-circle"></i> Sign out</a>			
+            </div>
+    
+        </div>
+    
+        <div class="row">
+            <div class="col three">			
+                <a href="#" class="btn btn-dark"><i class="fa fa-image"></i> Upload new image</a>			
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-dark"><i class="fa fa-pencil"></i> Register now</a>			
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-dark"><i class="fa fa-shopping-cart"></i> Add to cart</a>						
+            </div>
+    
+            <div class="col three">
+                <a href="#" class="btn btn-dark"><i class="fa fa-times-circle"></i> Sign out</a>			
+            </div>
+    
+        </div>
+    
+    
+    </div>
+    
+        
+    </body>
+    </html>
+</body>
+</html>
